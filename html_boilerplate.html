@@ -14,7 +14,7 @@ Some are a single pair of parentesis (meaning they only have an opening tag) wit
 and also the img tag is the same: <img src=".path/to/image.png" alt="This is a png picture">. They are called "self closing"
 Some have special beginning character, like the !DOCTYPE or this comment itself.
 And there is <br /> and maybe more.
-
+The img tag can also have a closing slash
 -->
 
 <html lang = "en">
@@ -32,6 +32,22 @@ And there is <br /> and maybe more.
     <h2>This is header two, but is this the right place for it? </h2>
     <p>In this paragraph, let's see how the <strong>strong tag </strong>looks. </p>
     <p>In this one, let's see the <em>emphasis tag.</em> </p>
+<h2>Entities</h2>
+<p>To represent <strong>reserved characters</strong> in the text of an html page, we have to use <strong>entities.</strong></p>
+If you look at the source code for the following list, you will see that the space and the brackets are creating by some weird encoding.
+<p>
+<ul>
+<li>this bracket &lt;</li>
+<li>this other bracket &gt;</li>
+<li>and &nbsp;the&nbsp;spaces&nbsp;&nbsp;between&nbsp;&nbsp;&nbsp;these&nbsp;r&nbsp;&nbsp;&nbsp;words</li>
+<li>the "And" symbol &amp;</li>
+</ul>
+</p>
+<p>
+ They all start with the symbol <strong>"And"</strong> followed by a<strong> semicolon </strong> at the end. Inbetween these two is the entity code.
+
+
+</p>
 
 </body>
 
